@@ -1,6 +1,6 @@
 # CSCI 0451 S25 Project Proposal: Dark Web Marketplace Analysis: Tracking Trends in the Dark Web Economy
 
-### By: Umman Azan and PB
+### By: Umman Azan and Prashanth Babu
 
 ## Abstract:  
 For our project, we plan to analyze a dataset from the [Agora Marketplace](https://www.kaggle.com/datasets/philipjames11/dark-net-marketplace-drug-data-agora-20142015?resource=download). This dataset contains over 100,000 unique listings of items such as drugs, weapons, services, and more, recorded between 2014 and 2015. Our goal is to uncover trends related to pricing, vendor locations, and shipping destinations across these various categories. Using machine learning techniques, we aim to identify correlations between item types (drugs, weapons, services) and regions, which could provide valuable insights into the dark web economy. Success will be measured by how well we can highlight meaningful patterns and predict future pricing or vendor locations based on historical data and evaluating our accuracy score on the train data on the test data.
@@ -46,6 +46,8 @@ For our project, we plan to analyze a dataset from the [Agora Marketplace](https
   - We’ll be using popular Python libraries like pandas, NumPy, PyTorch, Scikit-learn, and Matplotlib for data processing, machine learning, and visualizations.
 
 # What we will learn 
+
+- **Azan**: I aim to deepen my understanding of both supervised and unsupervised learning, particularly focusing on regression and clustering techniques. I also want to learn how to deal with large, real-world datasets and how to uncover insights related to illicit markets while making sure to not be susceptible or being aware of the potential biases and limitations datasets like these impose.
 
 - **Prashant Babu**: I look forward to learning more about and working with large datasets, like the dark web dataset, and exploring economic patterns in these markets. Additionally, I am looking forward to improving my data visualization skills and gaining hands-on experience with version control (Git).
 

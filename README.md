@@ -1,73 +1,46 @@
-# Machine learning Final Project Proposal
+# CSCI 0451 S25 Project Proposal: Dark Web Marketplace Analysis: Tracking Trends in the Dark Web Economy
 
-## Abstract
-Heart disease remains one of the leading causes of death globally. This project aims to build a machine learning model that predicts the likelihood of a person developing heart disease based on key health indicators such as age, cholesterol level, chest pain type, and blood pressure. The approach involves using logistic regression as a baseline and comparing its performance against a Random Forest classifier to better capture feature interactions. Evaluation will be conducted using precision, recall, F1-score, and ROC-AUC metrics to ensure the model's effectiveness and clinical relevance.
+### By: Umman Azan and PB
 
-## Motivation and Question
-My motivation stems from the significant potential of predictive healthcare technologies to transform preventative care. By accurately identifying at-risk individuals, healthcare providers can intervene early, greatly improving patient outcomes and reducing healthcare costs. The primary scientific question is: **Can we reliably predict the risk of heart disease using easily accessible clinical data?**
+## Abstract:  
+For our project, we plan to analyze a dataset from the [Agora Marketplace](https://www.kaggle.com/datasets/philipjames11/dark-net-marketplace-drug-data-agora-20142015?resource=download). This dataset contains over 100,000 unique listings of items such as drugs, weapons, services, and more, recorded between 2014 and 2015. Our goal is to uncover trends related to pricing, vendor locations, and shipping destinations across these various categories. Using machine learning techniques, we aim to identify correlations between item types (drugs, weapons, services) and regions, which could provide valuable insights into the dark web economy. Success will be measured by how well we can highlight meaningful patterns and predict future pricing or vendor locations based on historical data and evaluating our accuracy score on the train data on the test data.
 
-## Data Plan
-The data used for this project will be sourced from the Cleveland Heart Disease dataset available on Kaggle and the UCI Machine Learning Repository. This dataset contains clinical records including factors such as age, sex, chest pain type, cholesterol levels, fasting blood sugar, resting electrocardiographic results, and blood pressure.
+## Motivation and Question:
+- **What problem are we solving, and why does it matter?**  
+  The dark web marketplace, including drug trade, weapons sales, and illicit services, presents challenges for law enforcement and public health efforts. By analyzing transaction data from Agora, we can gain insights into the patterns within these illicit markets and potentially identify high-risk vendors or regions. This analysis could play a key role in curbing illegal activities on online marketplaces by providing data-driven insights into the flow of goods.
 
-- [Cleveland Heart Disease Dataset](https://www.kaggle.com/datasets/cherngs/heart-disease-cleveland-uci)
+- **What specific question(s) do we intend to answer?**  
+  - Can we predict the regions where different types of goods (drugs, weapons, services) are most commonly shipped?  
+  - What pricing patterns can be seen across different product categories and geographic locations?  
+  - Is there a relationship between vendor ratings and the pricing of goods, and does this vary by category (e.g., drugs vs. services)?  
+  - What are the most purchased goods or items, and what trends can we observe when considering these items alongside other variables such as price, category, and vendor location?
 
-## Planned Deliverables
-### Primary Deliverables:
-- A well-documented Python package containing:
-  - Data preprocessing pipeline
-  - Implementation of logistic regression and random forest models
-  - Evaluation scripts using standard classification metrics (precision, recall, F1-score, ROC-AUC)
+## Planned Deliverables:
+1. **Main ML application**  
+   - We’ll apply both supervised and unsupervised learning techniques to identify patterns within the Agora marketplace data. We plan to focus on categorizing items based on their shipping destinations, price, and vendor information. Additionally, we plan to experiment with different regression models like logistic regression or random forest regression to predict pricing trends across different categories using historical data.
 
-- Jupyter Notebooks demonstrating:
-  - Exploratory Data Analysis (EDA)
-  - Model training and hyperparameter tuning
-  - Results analysis and feature importance visualization
+2. **Exploratory Data Analysis and Prediction Model**  
+   - We’ll create a Jupyter notebook to perform exploratory data analysis, by pretty much just being curious and following our intuition through visualizations to see whether we can spot any patterns. For example, visualizing the distribution of prices across different categories, the most commonly listed items, and geographic data about vendors. Through that, we’ll better understand how product categories, such as drugs, weapons, and services, relate to pricing and location.
+   - Our goal is to build a model that predicts pricing trends based on product categories, vendor data, and shipping destinations. This will help us forecast pricing behavior and identify larger trends in the marketplace, potentially helping law enforcement or others interested in understanding the flow of illicit goods globally.
 
-### Evaluation:
-- **Full Success:** A robust predictive model that reliably predicts heart disease risk with an ROC-AUC score above 0.85, demonstrating clear interpretability of important features.
-- **Partial Success:** Even if the ideal ROC-AUC is not reached, deliverables will include a fully functional and interpretable modeling pipeline, providing valuable insights into the key health indicators influencing heart disease.
+-We plan to write a detailed blog post about our final results, following the computational essay style. The post will include:
+- Thoughtfully composed English paragraphs explaining our approach and results.
+- Clear explanations of the code used for data preprocessing, model building, and evaluation.
+- Well-labeled visualizations to help readers understand trends, correlations, and the results of our predictive models.
+
+
+- **Success measurements** 
+   - **Full Success**: A fully functioning model that predicts prices and (hopefully) precise shipping destinations across all item categories, complete with visualizations and performance metrics. (Hoping it won’t be enforcing bias and stereotypes *fingers crossed*)
+   - **Partial Success**: If we face challenges (such as sparse data or computational limitations), we will still provide exploratory analysis with meaningful insights into market trends, pricing patterns, and vendor behavior, mostly relying on plots and other visualizations.
 
 ## Resources Required
-- **Data:** Cleveland Heart Disease dataset from Kaggle.
-- **Software:** Python, scikit-learn, pandas, numpy, matplotlib, seaborn.
-- **Computing Resources:** Personal computer sufficient for moderate computational demands of this project.
-- **Version Control:** Git and GitHub will be used extensively for version tracking, collaboration, and documentation management.
+- **Data**  
+  - The primary dataset is the *Agora Dark Web Marketplace Data* from Kaggle. It includes vendor information, product categories (drugs, weapons, services, etc.), prices, ratings, and shipping data. This dataset is essential for exploring correlations within the marketplace.
+  - **Dataset link**: [Dark Net Marketplace Data (Agora 2014-2015)](https://www.kaggle.com/datasets/philipjames11/dark-net-marketplace-drug-data-agora-20142015/data)
 
-## What I Will Learn
-Through this project, I aim to learn:
-- Advanced classification techniques (Random Forest Classifier and Logistic Regression)
-- Techniques for effective exploratory data analysis and feature engineering
-- Evaluation methodologies for binary classifiers (ROC-AUC, confusion matrix, precision, recall, F1-score)
-- Git version control for effective project management
-- Effective documentation and reproducible research practices
+- **Computing Power**  
+  - We plan to use Google Colab for our preliminary analysis and model development, as it offers easy access to computational resources and GPU support for training models.  
+  - If the resources available in Colab fall short, we’ll reach out for permission to use the BIG GUNS, a.k.a. Middlebury Cluster.
 
-## Risk Statement
-Potential risks include:
-1. **Data Limitations:** The Cleveland dataset might lack sufficient complexity or diversity, potentially limiting model generalizability.
-2. **Performance Constraints:** Random Forest may not significantly outperform Logistic Regression if key predictors interact linearly, limiting the added value from more complex modeling techniques.
-
-Contingency plans involve extensive exploratory analysis to mitigate data limitations and clearly document any constraints encountered.
-
-## Ethics Statement
-### Potential Beneficiaries:
-- Individuals at risk of heart disease due to better early diagnosis and treatment.
-- Healthcare providers, through improved predictive tools for patient care.
-
-### Potential Risks:
-- **Exclusion:** Individuals whose data characteristics differ significantly from the dataset may not benefit equally, potentially reinforcing biases in healthcare access.
-- **Harm:** Incorrect predictions could cause unnecessary anxiety or false reassurance. Hence, careful communication of model limitations is crucial.
-
-The assumption behind the project's beneficial impact is that early prediction and intervention lead to improved healthcare outcomes. Another assumption is that predictive modeling based on existing clinical data reliably translates into real-world benefits.
-
-## Tentative Timeline
-### Week 9 (Checkpoint - Week 11):
-- Complete initial exploratory data analysis and preprocessing pipeline
-- Baseline logistic regression model implementation and initial evaluation results
-
-### Week 12 (Final Presentation):
-- Finalize Random Forest implementation and perform hyperparameter tuning
-- Comprehensive evaluation and feature importance analysis
-- Prepare and deliver final Jupyter notebook and documented Python package
-
-This proposal outlines a clear path towards developing an impactful predictive healthcare tool, providing valuable learning and practical experiences in machine learning and healthcare applications.
-
+- **Libraries**  
+  - We’ll be using popular Python libraries like pandas, NumPy, PyTorch, Scikit-learn, and Matplotlib for data processing, machine learning, and visualizations.

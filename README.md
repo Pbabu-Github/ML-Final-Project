@@ -44,3 +44,40 @@ For our project, we plan to analyze a dataset from the [Agora Marketplace](https
 
 - **Libraries**  
   - We’ll be using popular Python libraries like pandas, NumPy, PyTorch, Scikit-learn, and Matplotlib for data processing, machine learning, and visualizations.
+
+# What we will learn 
+
+- **Prashant Babu**: I look forward to learning more about and working with large datasets, like the dark web dataset, and exploring economic patterns in these markets. Additionally, I am looking forward to improving my data visualization skills and gaining hands-on experience with version control (Git).
+
+## Risk Statement
+1. **Lack of Data**: Some categories, such as specific types of weapons or services, may have insufficient data, leading to unreliable conclusions or predictions.
+2. **Ethical Considerations**: Handling sensitive data from the dark web requires caution. We must make sure that no illegal activities are promoted or exploited, and we need to be mindful of privacy and confidentiality when working with this type of data.
+
+## Ethics Statement
+1. **Who Benefits?**  
+   This project would benefit law enforcement agencies, policymakers, and researchers studying the dark web as we will be sharing insights into the economic patterns of illegal markets.
+   
+2. **Who might be Harmed?**  
+   This analysis does not directly affect individuals involved in the marketplace but may raise concerns about privacy, even though the data has been anonymized. As it does identify regions and keywords, certain groups and places might be targeted by law enforcement agencies and it might not necessarily be solely based on “just” assumptions. Also the keywords can unintentionally give the impression of solidifying stereotypes such as the increased use of the N-word or R-word in the context of different products and items, as we can’t really have a fair idea of who the “customers” are or what their identities are. For all we know, it could be skewed through different hidden factors. 
+   
+3. **Will the World become a better place**  
+   - We assume that the data collected from Agora is a representative sample of the dark web marketplace. Assuming that the marketplace behavior from 2014–2015 still holds relevance for understanding today’s dark web trade dynamics including the fact that other marketplaces in the Dark Web show similar behavioral and purchase patterns we believe our project would help make the world a slightly better place.
+- Through these assumptions, law enforcement will be able to target and crack down on such drug and arms groups and open-illegal sales on the internet which can be accessed by anyone with little technical knowledge, making the world a overall better place one step at a time.
+
+## Tentative Timeline
+- **Week 9 Checkpoint**:  
+ - Data preprocessing and cleaning completed.  
+ - Figure out at least 6 variables and categories we want to plot,
+	
+
+- **Week 10 Checkpoint**:  
+  - Initial exploratory data analysis done, including visualizations of most item categories, prices, and vendor locations.
+- Preliminary scatter maps, heatmaps etc. done to find correlation between different featuresets/variables.
+ - Must use these insights to decide how to build model from there.
+- **Week 11 Checkpoint**:  
+  - We will build and train our regression model
+  - We will get insights into correlations between item categories, pricing, and vendor regions and also compare the model’s accuracy through score with the testers.
+
+- **Final Presentations**:  
+  - The final report and presentation will be completed, including an in-depth discussion of our findings and a summary of key trends identified through the analysis.
+
